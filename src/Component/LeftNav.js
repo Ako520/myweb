@@ -61,12 +61,7 @@ class LeftNav extends React.Component {
     };
     return(
       <div>
-        <div style={styles.iconWrap}>
-          <IconButton iconStyle={styles.iconSize} style={styles.iconStyle} onTouchTap={this.handleToggle.bind(this)}>
-            <Menu color="white"/>
-          </IconButton>
-        </div>
-        <Drawer docked={false} open={this.state.open} onRequestChange={(open) => this.setState({open})}>
+        <Drawer open={true}>
           <h2 style={styles.name}>Ako酱</h2>
           <div style={styles.avatar}></div>
           <Link to="/frontblog"><MenuItem onTouchTap={this.handleClose.bind(this)}>前端开发</MenuItem>
