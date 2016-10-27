@@ -90,6 +90,9 @@ class LeftNav extends React.Component {
           <Link to="/blog" activeClassName='activeRoute'>
             <MenuItem onTouchTap={this.handleClose.bind(this)}>简历</MenuItem>
           </Link>
+          <Link to="/404" activeClassName='activeRoute'>
+            <MenuItem onTouchTap={this.handleClose.bind(this)}>404</MenuItem>
+          </Link>
         </div>
   </Drawer>
 </div>
