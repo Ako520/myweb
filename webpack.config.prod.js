@@ -41,6 +41,10 @@ module.exports = {
     {
          test   : /\.woff|\.woff2|\.svg|.eot|\.ttf/,
          loader : 'url?prefix=font/&limit=10000'
+    },
+    {
+      test: /\.scss$/,
+      loaders: ["style", "css?sourceMap", "sass?sourceMap"]
     }]
   }
 };

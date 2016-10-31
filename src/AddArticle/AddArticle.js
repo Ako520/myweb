@@ -18,7 +18,7 @@ class AddArticle extends React.Component {
     let subtitle=this.refs.subtitle.getValue();
     let content=this.refs.content.getValue();
 
-    axios.post('http://localhost:3000/posts', {
+    axios.post('http://localhost:3000/frontArticles', {
       // id:id,
       title:title,
       content:content,

@@ -60,10 +60,10 @@ class OneCard extends React.Component {
 
   }
   handJump(){
-    // if (this.context.router.isActive('/frontblog')) {
-    //   let id = this.props._id;
-    //   browserHistory.push(`/frontblog/${id}`)
-    // }
+    if (this.context.router.isActive('/frontblog')) {
+      let id = this.props._id;
+      browserHistory.push(`/frontblog/${id}`)
+    }
   }
   render () {
     let styles={

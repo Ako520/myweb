@@ -11,6 +11,49 @@ $height:$width*1.2;
   height: $height1;
   background:$w;
 }
+
+$breakpoints: (
+  'tiny':   ( max-width:  767px ),
+  'small':  ( min-width:  768px ),
+  'medium': ( min-width:  992px ),
+  'large':  ( min-width: 1200px ),
+  'custom': ( min-height:  40em ),
+  'tiny404' :(max-width: 760px),
+  'small404' :(min-width: 800px),
+  'medium404' :(min-width: 1276px),
+  'large404' :(min-width: 1600px),
+);
+$widths: (
+  'tiny404'  : 200px,
+  'small404'  : 300px,
+  'medium404' : 450px,
+  'large404' : 600px,
+);
+
+@mixin breakpoint($name) {
+  @if map-has-key($breakpoints, $name) {
+    @media #{inspect(map-get($breakpoints, $name))} {
+      width: map-get($widths,$name);
+      height: map-get($widths,$name)*1.2;
+      .pixel{
+        width: map-get($widths,$name)/40;
+        height: map-get($widths,$name)/40;
+      }
+      @content;
+    }
+  }
+  @else {
+    @warn "Couldn't find a breakpoint named `#{$name}`.";
+  }
+}
+
+
+@function bgColors($bgColor){
+    @if not map-has-key($social-colors,$bgColor){
+        @warn "No color found for `#{$bgColor}` in $social-colors map. Property omitted.";
+    }
+    @return map-get($social-colors,$bgColor);
+}
 .canvas {
  box-sizing: border-box;
  display:flex;
@@ -22,10 +65,23 @@ $height:$width*1.2;
 }
 .go404{
   @include bg;
+  // @include breakpoint(404medium){
+  //   //  width: map-get($widths,404medium);
+  //   width: 300px;
+  // }
+  @include breakpoint(small404) {
+  }
+  @include breakpoint(medium404) {
+  }
+  @include breakpoint(large404) {
+  }
+  @include breakpoint(tiny404) {
+  }
+
   box-shadow:29px 9px 93px 2px rgba(0, 0, 0, 0.41);
   .pixel {
-    width:$width/40;
-    height:$height/48;
+    // width:$width/40;
+    // height:$height/48;
     background:$y;
     float:left;
     font-size:6px;
@@ -114,10 +170,19 @@ $height:$width*1.2;
 }
 .gopikaqiu {
   @include bg;
+  @include bg;
+  @include breakpoint(small404) {
+  }
+  @include breakpoint(medium404) {
+  }
+  @include breakpoint(large404) {
+  }
+  @include breakpoint(tiny404) {
+  }
   box-shadow:1px 14px 93px 2px rgba(0, 0, 0, 0.41);
   .pixel {
-    width:$width/40;
-    height:$height/48;
+    // width:$width/40;
+    // height:$height/48;
     background:$y;
     float:left;
     font-size:6px;
