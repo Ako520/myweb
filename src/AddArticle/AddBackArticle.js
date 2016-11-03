@@ -18,7 +18,7 @@ class AddArticle extends React.Component {
     let subtitle=this.refs.subtitle.getValue();
     let content=this.refs.content.getValue();
 
-    axios.post('http://localhost:3000/frontArticles', {
+    axios.post('http://localhost:3000/backArticles', {
       // id:id,
       title:title,
       content:content,
@@ -104,6 +104,14 @@ class AddArticle extends React.Component {
             />
             <Checkbox
               label="自动化测试"
+              style={styles.checkbox}
+            />
+            <Checkbox
+              label="sass"
+              style={styles.checkbox}
+            />
+            <Checkbox
+              label="mongodb"
               style={styles.checkbox}
             />
           </div>

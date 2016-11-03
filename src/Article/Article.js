@@ -5,7 +5,7 @@ import marked from 'marked'
 import axios from 'axios'
 import highlight from 'highlight.js'
 import '../styles/markdown.css'
-class Item extends React.Component {
+class Article  extends React.Component {
   constructor(){
     super();
     this.state={
@@ -20,14 +20,26 @@ class Item extends React.Component {
     //     wait:false
     //   });
     // } )
-    console.log(this.props.params.url);
-    axios.get(`http://localhost:3000/frontArticles/${this.props.params.url}`).then(res => {
-      console.log(res);
-      this.setState({
-        data:marked(res.data.content),
-        wait:false
+    if (this.context.router.isActive(`/frontblog/${this.props.params.url}`)) {
+      console.log(this.props.params.url);
+      axios.get(`http://localhost:3000/frontArticles/${this.props.params.url}`).then(res => {
+        console.log(res);
+        this.setState({
+          data:marked(res.data.content),
+          wait:false
+        });
       });
-    });
+    }
+    else{
+      console.log(this.props.params.url);
+      axios.get(`http://localhost:3000/backArticles/${this.props.params.url}`).then(res => {
+        console.log(res);
+        this.setState({
+          data:marked(res.data.content),
+          wait:false
+        });
+      });
+    }
   }
   render () {
     marked.setOptions({
@@ -42,5 +54,8 @@ class Item extends React.Component {
     )
   }
 }
+Article.contextTypes={
+  router: React.PropTypes.object
+}
 
-export default Item;
+export default Article ;

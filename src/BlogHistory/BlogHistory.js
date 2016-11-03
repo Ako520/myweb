@@ -20,7 +20,7 @@ class Item extends React.Component {
     //     wait:false
     //   });
     // } )
-    axios.get(`https://raw.githubusercontent.com/Ako520/Ako520.github.io/master/README.md`).then(res => {
+    axios.get(`https://raw.githubusercontent.com/Ako520/myweb/master/README.md`).then(res => {
       console.log(res);
       this.setState({
         data:marked(res.data),

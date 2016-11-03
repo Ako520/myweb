@@ -50,3 +50,13 @@
 
 #### 1.0.6 (2016-10-31)
  * 使用 media queries in Sass 的方法给404.html做断点自适应
+
+#### 1.0.7 (2016-11-1)
+ * 修复文章卡片标题下的时间如果跨一个月或一年会不正常显示的bug
+ * 增加卡片标题下的时间在闰年时的逻辑
+
+#### 1.0.8 (2016-11-3)
+ * 增加了后台管理页面---修改文章页
+ * 在后台管理页面上增加文章实时markdown转换
+ * 使用loadsh解决marked方法穿对象报警告---toString
+ * 使用loadsh解决input或material-ui的TextField他们的defaultValue属性只读可以读到的第一个值即使state改变render后也不会再读其他值---isEmpty

@@ -91,7 +91,7 @@ class LeftNav extends React.Component {
             <MenuItem onTouchTap={this.handleClose.bind(this)}>简历</MenuItem>
           </Link>
           <Link to="/404" activeClassName='activeRoute'>
-            <MenuItem onTouchTap={this.handleClose.bind(this)}>404</MenuItem>
+            <MenuItem onTouchTap={this.handleClose.bind(this)}>粗问题了404</MenuItem>
           </Link>
         </div>
   </Drawer>
