@@ -60,3 +60,7 @@
  * 在后台管理页面上增加文章实时markdown转换
  * 使用loadsh解决marked方法穿对象报警告---toString
  * 使用loadsh解决input或material-ui的TextField他们的defaultValue属性只读可以读到的第一个值即使state改变render后也不会再读其他值---isEmpty
+
+#### 1.0.9 (2016-11-10)
+ * 避免读取本地数据缓存---使用?${Math.random()}作为请求结尾
+ * 使用路由嵌套和动态判断实现多层嵌套情况下触发activeClassName

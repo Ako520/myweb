@@ -58,12 +58,15 @@ class LeftNav extends React.Component {
       iconSize: {
         width: "70",
         height: "70",
+      },
+      a:{
+        textDecoration:"none"
       }
     };
     return(
       <div>
         <Drawer open={true}>
-          <IndexLink to='/' style={{textDecoration:"none"}} >
+          <IndexLink to='/' style={styles.a} >
             <h2 style={styles.name}>Ako酱</h2>
           </IndexLink>
           <IndexLink to='/'>

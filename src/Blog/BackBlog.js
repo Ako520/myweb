@@ -1,7 +1,8 @@
 import React, { PropTypes } from 'react'
 import OneCard from '../Component/Card.js'
 import axios from 'axios'
-import {getCardData} from '../utils/getData.js'
+// import {getCardData} from '../utils/getData.js'
+import isEmpty from 'lodash/fp/isEmpty';
 
 class Blog extends React.Component {
   constructor(){
@@ -18,7 +19,7 @@ class Blog extends React.Component {
     //     wait:false
     //   });
     // } )
-    axios.get('http://localhost:3000/BackArticles').then(res => {
+    axios.get('http://localhost:3000/BackArticles?${Math.random()}').then(res => {
       this.setState({
         data:res.data.datas
       });
@@ -32,7 +33,8 @@ class Blog extends React.Component {
     })
     return (
       <div style={{width:"100%",marginTop:"20px"}}>
-        {this.state.wait ? "请稍等" : cards }
+        {isEmpty(this.props.params.url) ? (this.state.wait ? "请稍等" : cards ) : ""}
+        {this.props.children}
       </div>
     )
   }

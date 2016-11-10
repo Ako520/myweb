@@ -22,11 +22,13 @@ class Routes extends React.Component {
         <Route path="/" component={App}>
           <IndexRoute component={Home} />
           <Route path="/bloghistory" component={BlogHistory}/>
-          <Route path="/frontblog" component={FrontBlog} />
-          <Route path="/frontblog/:url" component={Article}/>
+          <Route  path="frontblog" component={FrontBlog}>
+            <Route path=":url" component={Article}/>
+          </Route>
           <Route path="/frontblog/:url/edit" component={EditFront} />
-          <Route path="/backblog" component={BackBlog}/>
-          <Route path="/backblog/:url" component={Article}/>
+          <Route path="/backblog" component={BackBlog}>
+            <Route path=":url" component={Article}/>
+          </Route>
           <Route path="/backblog/:url/edit" component={EditBack}/>
           <Route path="/work" component={Work}/>
           <Route path="/frontadd" component={AddFrontArticle}/>

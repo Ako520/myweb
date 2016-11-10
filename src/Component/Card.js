@@ -11,41 +11,7 @@ class OneCard extends React.Component {
     }
   }
   componentDidMount() {
-    // getCardData().then( (res) =>{
-    //   this.setState({
-    //     data:res,
-    //     wait:false
-    //   });
-    // } )
-
-
-    // let a =1 ;
-    // let b =2 ;
-    // let c =3 ;
-    // let d =4 ;
-    // if (a == 1 && (c == 3 && (b == 4 || d == 5))) {
-    //   console.log(1);
-    // }
-
-    //闰年逻辑
-    // function runnian (year) {
-    //   if (year % 4 == 0) {
-    //     if (year % 400 != 0 && year % 100 == 0  ) {
-    //       console.log("不是400年一闰");
-    //       return
-    //     }
-    //     else {
-    //       console.log("是闰年");
-    //     }
-    //   }
-    //   else {
-    //     console.log("不是闰年");
-    //   }
-    // }
-    // runnian(2000);
-    // runnian(1900);
     let createTime = this.props.createTime;
-    // console.log(createTime);
     let mongth =[null,31,28,31,30,31,30,31,31,30,31,30,31]
     let par = /(\d+)-(\d+)-(\d+)T(\d+)/;
     let arr = createTime.match(par);
@@ -140,7 +106,7 @@ class OneCard extends React.Component {
           <div dangerouslySetInnerHTML={{__html:this.props.subtitle}}/>
         </CardText>
         <CardActions>
-          <FlatButton tton label="阅读全文" backgroundColor="#a4c639" hoverColor="#8AA62F" />
+          <FlatButton  label="阅读全文" backgroundColor="#a4c639" hoverColor="#8AA62F" />
         </CardActions>
       </Card>
     )

@@ -21,8 +21,7 @@ class Article  extends React.Component {
     //   });
     // } )
     if (this.context.router.isActive(`/frontblog/${this.props.params.url}`)) {
-      console.log(this.props.params.url);
-      axios.get(`http://localhost:3000/frontArticles/${this.props.params.url}`).then(res => {
+      axios.get(`http://localhost:3000/frontArticles/${this.props.params.url}?${Math.random()}`).then(res => {
         console.log(res);
         this.setState({
           data:marked(res.data.content),
@@ -31,8 +30,7 @@ class Article  extends React.Component {
       });
     }
     else{
-      console.log(this.props.params.url);
-      axios.get(`http://localhost:3000/backArticles/${this.props.params.url}`).then(res => {
+      axios.get(`http://localhost:3000/backArticles/${this.props.params.url}?${Math.random()}`).then(res => {
         console.log(res);
         this.setState({
           data:marked(res.data.content),

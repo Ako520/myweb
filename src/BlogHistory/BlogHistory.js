@@ -21,7 +21,6 @@ class Item extends React.Component {
     //   });
     // } )
     axios.get(`https://raw.githubusercontent.com/Ako520/myweb/master/README.md`).then(res => {
-      console.log(res);
       this.setState({
         data:marked(res.data),
         wait:false
