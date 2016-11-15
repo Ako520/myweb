@@ -11,70 +11,110 @@ class OneCard extends React.Component {
     }
   }
   componentDidMount() {
+    console.log(this.props.createTime);
     let createTime = this.props.createTime;
-    let mongth =[null,31,28,31,30,31,30,31,31,30,31,30,31]
+    // let par = /(.+)T(.+)\./;
     let par = /(\d+)-(\d+)-(\d+)T(\d+)/;
     let arr = createTime.match(par);
-    let creatYear = arr[1];
-    let creatMonth = arr[2];
-    let creatDay = arr[3];
-    let creatHour = arr[4];
 
-    let curTime = new Date();
-    let curYear = curTime.getFullYear();
-    let curMonth = curTime.getMonth()+1;
-    let curDay = curTime.getDate();
-    let curHour = curTime.getHours();
-    // console.log(Math.abs(curDay - creatDay));
-    // console.log(creatDay,curDay);
-    // console.log(creatMonth,curMonth);
-    // console.log(curMonth);
-    if (Math.abs(curYear - creatYear) > 0 && curMonth - creatMonth >0) {
-      this.setState({
-        howlong:`${curYear - creatYear}年前`
-      });
-    }
-    else if (Math.abs(curMonth - creatMonth) > 0 && curDay - creatDay >0) {
-        this.setState({
-          howlong:`${curMonth - creatMonth}月前`
-        });
-    }
-    else if (Math.abs(curDay - creatDay) > 0) {
-      if (curDay - creatDay > 0 ) {
-        this.setState({
-          howlong:`${curDay - creatDay}天前`
-        });
-      }
-      else {
-        if (creatMonth == 2 && creatYear % 4 == 0) {
-          if (creatYear % 400 != 0 && creatYear % 100 == 0  ) {
-            this.setState({
-              howlong:`${curDay+28-creatDay}天前`
-            });
-          }
-          else {
-            this.setState({
-              howlong:`${curDay+29-creatDay}天前`
-            });
-          }
-        }
-        else {
-          this.setState({
-            howlong:`${curDay+mongth[creatMonth]-creatDay}天前`
-          });
-        }
-      }
-    }
-    else if (curHour > creatHour) {
-      this.setState({
-        howlong:`${curHour - creatHour}小时前`
-      });
-    }
-    else if(curHour = creatHour) {
-      this.setState({
-        howlong: "刚刚"
-      });
-    }
+    // let createTime = this.props.createTime;
+    // let mongth =[null,31,28,31,30,31,30,31,31,30,31,30,31]
+    // let par = /(\d+)-(\d+)-(\d+)T(\d+)/;
+    // let arr = createTime.match(par);
+    // let creatYear = arr[1];
+    // let creatMonth = arr[2];
+    // let creatDay = arr[3];
+    // let creatHour = arr[4];
+
+    var minute = 1000 * 60;
+  	var hour = minute * 60;
+  	var day = hour * 24;
+  	var halfamonth = day * 15;
+  	var month = day * 30;
+  	var now = new Date().getTime();
+    var dateTimeStamp = new Date(arr[1],arr[2]-1,arr[3],arr[4],0,0).getTime();
+    var diffValue = now - dateTimeStamp;
+  	if(diffValue < 0){return;}
+  	var monthC =diffValue/month;
+  	var weekC =diffValue/(7*day);
+  	var dayC =diffValue/day;
+  	var hourC =diffValue/hour;
+  	var minC =diffValue/minute;
+    if(monthC>=1){
+  		this.setState({
+  		  howlong:`${parseInt(monthC)}月前`
+  		});
+  	}
+  	else if(dayC>=1){
+  		this.setState({
+  		  howlong:`${parseInt(dayC)}天前`
+  		});
+  	}
+  	else if(hourC>=1){
+  		this.setState({
+  		  howlong:`${parseInt(hourC)}小时前`
+  		});
+  	}
+  	else if(minC>=1){
+  		this.setState({
+  		  howlong:`${parseInt(minC)}分钟前`
+  		});
+  	}
+    else
+  	this.setState({
+  	  howlong:"刚刚"
+  	});
+    // let curTime = new Date();
+    // let curYear = curTime.getFullYear();
+    // let curMonth = curTime.getMonth()+1;
+    // let curDay = curTime.getDate();
+    // let curHour = curTime.getHours();
+    // if (Math.abs(curYear - creatYear) > 0 && curMonth - creatMonth >0) {
+    //   this.setState({
+    //     howlong:`${curYear - creatYear}年前`
+    //   });
+    // }
+    // else if (Math.abs(curMonth - creatMonth) > 0 && curDay - creatDay >0) {
+    //     this.setState({
+    //       howlong:`${curMonth - creatMonth}月前`
+    //     });
+    // }
+    // else if (Math.abs(curDay - creatDay) > 0) {
+    //   if (curDay - creatDay > 0 ) {
+    //     this.setState({
+    //       howlong:`${curDay - creatDay}天前`
+    //     });
+    //   }
+    //   else {
+    //     if (creatMonth == 2 && creatYear % 4 == 0) {
+    //       if (creatYear % 400 != 0 && creatYear % 100 == 0  ) {
+    //         this.setState({
+    //           howlong:`${curDay+28-creatDay}天前`
+    //         });
+    //       }
+    //       else {
+    //         this.setState({
+    //           howlong:`${curDay+29-creatDay}天前`
+    //         });
+    //       }
+    //     }
+    //     else {
+    //       this.setState({
+    //         howlong:`${curDay+mongth[creatMonth]-creatDay}天前`
+    //       });
+    //     }
+    //   }
+    // }
+    // else if (curHour > creatHour) {
+    //   this.setState({
+    //     howlong:`${curHour - creatHour}小时前`
+    //   });
+    // }
+    // else if(curHour = creatHour) {
+    //   this.setState({
+    //     howlong: "刚刚"
+    //   });
+    // }
 
 
   }

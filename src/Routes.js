@@ -2,6 +2,8 @@ import { render } from 'react-dom'
 import { Redirect,Router, Route,IndexRoute, browserHistory } from 'react-router'
 import App from './App.js'
 import Home from './Home/Home.js'
+import Apps from './Apps/Apps.js'
+import Counter from './Apps/Counter.js'
 import BlogHistory from './BlogHistory/BlogHistory.js'
 import Work from './Work/Work.js'
 import AddFrontArticle from './AddArticle/AddFrontArticle.js'
@@ -14,30 +16,39 @@ import Article from './Article/Article.js'
 import NotFoundPage from './NotFoundPage/NotFoundPage.js'
 import React, { PropTypes } from 'react'
 
+import {Provider} from 'react-redux'
+import configureStore  from './store/configureStore.js'
 
+const store = configureStore();
 class Routes extends React.Component {
   render () {
     return(
-      <Router history={browserHistory}>
-        <Route path="/" component={App}>
-          <IndexRoute component={Home} />
-          <Route path="/bloghistory" component={BlogHistory}/>
-          <Route  path="frontblog" component={FrontBlog}>
-            <Route path=":url" component={Article}/>
+      <Provider store={store}>
+        <Router history={browserHistory}>
+          <Route path="/" component={App}>
+            <IndexRoute component={Home} />
+            <Route path="/bloghistory" component={BlogHistory}/>
+            <Route  path="frontblog" component={FrontBlog}>
+              <Route path=":url" component={Article}/>
+            </Route>
+            <Route path="/frontblog/:url/edit" component={EditFront} />
+            <Route path="/backblog" component={BackBlog}>
+              <Route path=":url" component={Article}/>
+            </Route>
+            <Route path="/backblog/:url/edit" component={EditBack}/>
+            <Route path="/work" component={Work}/>
+            <Route path="/apps" component={Apps}>
+              <Route path="2" component={Counter}/>
+            </Route>
+            <Route path="/apps/1" component={Counter}/>
+            <Route path="/frontadd" component={AddFrontArticle}/>
+            <Route path="/backadd" component={AddBackArticle}/>
+            <Route path='/404' component={NotFoundPage}/>
+            {/* 其他重定向到 404 */}
+            <Redirect from='*' to='/404' />
           </Route>
-          <Route path="/frontblog/:url/edit" component={EditFront} />
-          <Route path="/backblog" component={BackBlog}>
-            <Route path=":url" component={Article}/>
-          </Route>
-          <Route path="/backblog/:url/edit" component={EditBack}/>
-          <Route path="/work" component={Work}/>
-          <Route path="/frontadd" component={AddFrontArticle}/>
-          <Route path="/backadd" component={AddBackArticle}/>
-          <Route path='/404' component={NotFoundPage}/>
-          {/* 其他重定向到 404 */}
-          <Redirect from='*' to='/404' />
-        </Route>
-      </Router>
+        </Router>
+      </Provider>
     )
   }
 }

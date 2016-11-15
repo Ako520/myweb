@@ -87,7 +87,7 @@ class LeftNav extends React.Component {
           <Link to="/blog" activeClassName='activeRoute'>
             <MenuItem onTouchTap={this.handleClose.bind(this)}>设计</MenuItem>
           </Link>
-          <Link to="/blog" activeClassName='activeRoute'>
+          <Link to="/apps" activeClassName='activeRoute'>
             <MenuItem onTouchTap={this.handleClose.bind(this)}>专题</MenuItem>
           </Link>
           <Link to="/blog" activeClassName='activeRoute'>
