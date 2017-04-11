@@ -1,5 +1,5 @@
 import { render } from 'react-dom'
-import { Redirect,Router, Route,IndexRoute, browserHistory } from 'react-router'
+import { Redirect, BrowserRouter as Router, Route,IndexRoute, browserHistory } from 'react-router-dom'
 import App from './App.js'
 import Home from './Home/Home.js'
 import Apps from './Apps/Apps.js'
@@ -14,19 +14,15 @@ import EditBack from './Edit/EditBack.js'
 import BackBlog from './Blog/BackBlog.js'
 import Article from './Article/Article.js'
 import NotFoundPage from './NotFoundPage/NotFoundPage.js'
-import React, { PropTypes } from 'react'
+import React from 'react'
 
-import {Provider} from 'react-redux'
-import configureStore  from './store/configureStore.js'
-
-const store = configureStore();
 class Routes extends React.Component {
   render () {
     return(
-      <Provider store={store}>
-        <Router history={browserHistory}>
+        <div>111
+      <Router>
           <Route path="/" component={App}>
-            <IndexRoute component={Home} />
+            {/*<IndexRoute component={Home} />*/}
             <Route path="/bloghistory" component={BlogHistory}/>
             <Route  path="frontblog" component={FrontBlog}>
               <Route path=":url" component={Article}/>
@@ -47,8 +43,8 @@ class Routes extends React.Component {
             {/* 其他重定向到 404 */}
             <Redirect from='*' to='/404' />
           </Route>
-        </Router>
-      </Provider>
+      </Router>
+        </div>
     )
   }
 }

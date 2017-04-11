@@ -1,11 +1,36 @@
-import React, { PropTypes } from 'react'
-import {Link,IndexLink} from "react-router"
+import React from 'react'
+import {
+  BrowserRouter as Router,
+  Route,
+  Link,
+  Redirect,
+} from 'react-router-dom'
 import avatar from '../images/avatar.jpg'
 import Drawer from 'material-ui/Drawer';
 import IconButton from 'material-ui/IconButton';
+import RaisedButton from 'material-ui/RaisedButton';
 import MenuItem from 'material-ui/MenuItem';
-import Menu from 'material-ui/svg-icons/navigation/menu.js';
 import './LeftNav.scss';
+
+// import { Redirect, BrowserRouter as Router, Route,IndexRoute, browserHistory } from 'react-router-dom'
+import App from '../App.js'
+import Home from '../Home/Home.js'
+import Apps from '../Apps/Apps.js'
+import Counter from '../Apps/Counter.js'
+import BlogHistory from '../BlogHistory/BlogHistory.js'
+import Work from '../Work/Work.js'
+import AddFrontArticle from '../AddArticle/AddFrontArticle.js'
+import AddBackArticle from '../AddArticle/AddBackArticle.js'
+import FrontBlog from '../Blog/FrontBlog.js'
+import EditFront from '../Edit/EditFront.js'
+import EditBack from '../Edit/EditBack.js'
+import BackBlog from '../Blog/BackBlog.js'
+import Article from '../Article/Article.js'
+import NotFoundPage from '../NotFoundPage/NotFoundPage.js'
+import About from './About.js'
+
+import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
+
 class LeftNav extends React.Component {
   constructor(){
     super();
@@ -64,43 +89,18 @@ class LeftNav extends React.Component {
       }
     };
     return(
-      <div>
         <Drawer open={true}>
-          <IndexLink to='/' style={styles.a} >
-            <h2 style={styles.name}>Ako酱</h2>
-          </IndexLink>
-          <IndexLink to='/'>
-            <div style={styles.avatar}></div>
-          </IndexLink>
           <div className="list">
-          <Link to="/frontblog" activeClassName='activeRoute'><MenuItem onTouchTap={this.handleClose.bind(this)}>前端开发</MenuItem>
-          </Link>
-          <Link to="/backblog" activeClassName='activeRoute'>
-            <MenuItem onTouchTap={this.handleClose.bind(this)}>后端开发</MenuItem>
-          </Link>
-          <Link to="/bloghistory" activeClassName='activeRoute'>
-            <MenuItem onTouchTap={this.handleClose.bind(this)}>博客更新</MenuItem>
-          </Link>
-          <Link to="/blog" activeClassName='activeRoute'>
-            <MenuItem onTouchTap={this.handleClose.bind(this)} >动漫</MenuItem>
-          </Link>
-          <Link to="/blog" activeClassName='activeRoute'>
-            <MenuItem onTouchTap={this.handleClose.bind(this)}>设计</MenuItem>
-          </Link>
-          <Link to="/apps" activeClassName='activeRoute'>
-            <MenuItem onTouchTap={this.handleClose.bind(this)}>专题</MenuItem>
-          </Link>
-          <Link to="/blog" activeClassName='activeRoute'>
-            <MenuItem onTouchTap={this.handleClose.bind(this)}>简历</MenuItem>
-          </Link>
-          <Link to="/404" activeClassName='activeRoute'>
-            <MenuItem onTouchTap={this.handleClose.bind(this)}>粗问题了404</MenuItem>
-          </Link>
-        </div>
-  </Drawer>
-</div>
-)
-}
+            <MenuItem>前端博客</MenuItem>
+            <MenuItem>博客更新</MenuItem>
+            <MenuItem>动漫专栏</MenuItem>
+            <MenuItem>简历</MenuItem>
+            <MenuItem>404君</MenuItem>
+            <Redirect from='*' to='/404' />
+          </div>
+        </Drawer>
+    )
+  }
 }
 
 export default LeftNav;
