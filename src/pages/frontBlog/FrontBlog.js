@@ -1,6 +1,6 @@
 import React, { PropTypes } from 'react'
-import OneCard from '../Component/Card.js'
-import axios from 'axios'
+import OneCard from '../../Component/Card.js'
+// import axios from 'axios'
 // import {getCardData} from '../utils/getData.js'
 import isEmpty from 'lodash/fp/isEmpty';
 
@@ -19,16 +19,16 @@ class Blog extends React.Component {
     //     wait:false
     //   });
     // } )
-    if (this.context.router.isActive("/frontblog")) {
-      this.setState({
-        showlist:true
-      });
-    }
-    axios.get('http://localhost:3000/frontArticles?${Math.random()}').then(res => {
-      this.setState({
-        data:res.data.datas
-      });
-    });
+    // if (this.context.router.isActive("/frontblog")) {
+    //   this.setState({
+    //     showlist:true
+    //   });
+    // }
+    // axios.get('http://localhost:3000/frontArticles?${Math.random()}').then(res => {
+    //   this.setState({
+    //     data:res.data.datas
+    //   });
+    // });
   }
   render () {
     let cards=this.state.data.map((item,i) => {
@@ -38,8 +38,9 @@ class Blog extends React.Component {
     })
     return (
       <div style={{width:"100%",marginTop:"20px"}}>
-        {isEmpty(this.props.params.url) ? (this.state.wait ? "请稍等" : cards ) : ""}
-        {this.props.children}
+        {/* {isEmpty(this.props.params.url) ? (this.state.wait ? "请稍等" : cards ) : ""} */}
+        {/* {this.props.children} */}
+        11111111111
       </div>
     )
   }

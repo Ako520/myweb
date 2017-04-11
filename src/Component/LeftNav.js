@@ -1,16 +1,13 @@
 import React from 'react'
 import {
-  BrowserRouter as Router,
-  Route,
   Link,
-  Redirect,
 } from 'react-router-dom'
 import avatar from '../images/avatar.jpg'
 import Drawer from 'material-ui/Drawer';
 import IconButton from 'material-ui/IconButton';
 import RaisedButton from 'material-ui/RaisedButton';
 import MenuItem from 'material-ui/MenuItem';
-import './LeftNav.scss';
+import './LeftNav.css';
 
 // import { Redirect, BrowserRouter as Router, Route,IndexRoute, browserHistory } from 'react-router-dom'
 import App from '../App.js'
@@ -21,12 +18,11 @@ import BlogHistory from '../BlogHistory/BlogHistory.js'
 import Work from '../Work/Work.js'
 import AddFrontArticle from '../AddArticle/AddFrontArticle.js'
 import AddBackArticle from '../AddArticle/AddBackArticle.js'
-import FrontBlog from '../Blog/FrontBlog.js'
+import FrontBlog from '../pages/frontBlog/FrontBlog.js'
 import EditFront from '../Edit/EditFront.js'
 import EditBack from '../Edit/EditBack.js'
 import BackBlog from '../Blog/BackBlog.js'
 import Article from '../Article/Article.js'
-import NotFoundPage from '../NotFoundPage/NotFoundPage.js'
 import About from './About.js'
 
 import MuiThemeProvider from 'material-ui/styles/MuiThemeProvider';
@@ -91,12 +87,11 @@ class LeftNav extends React.Component {
     return(
         <Drawer open={true}>
           <div className="list">
-            <MenuItem>前端博客</MenuItem>
-            <MenuItem>博客更新</MenuItem>
-            <MenuItem>动漫专栏</MenuItem>
-            <MenuItem>简历</MenuItem>
-            <MenuItem>404君</MenuItem>
-            {/* <Redirect from='*' to='/404' /> */}
+            <MenuItem><Link to='frontblog'>前端博客</Link></MenuItem>
+            <MenuItem><Link to='bloghistory'>博客更新</Link></MenuItem>
+            <MenuItem><Link to='anime'>动漫专栏</Link></MenuItem>
+            <MenuItem><Link to='brief'>简历</Link></MenuItem>
+            <MenuItem><Link to='404'>404君</Link></MenuItem>
           </div>
         </Drawer>
     )
