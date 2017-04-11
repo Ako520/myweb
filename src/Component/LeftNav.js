@@ -96,7 +96,7 @@ class LeftNav extends React.Component {
             <MenuItem>动漫专栏</MenuItem>
             <MenuItem>简历</MenuItem>
             <MenuItem>404君</MenuItem>
-            <Redirect from='*' to='/404' />
+            {/* <Redirect from='*' to='/404' /> */}
           </div>
         </Drawer>
     )

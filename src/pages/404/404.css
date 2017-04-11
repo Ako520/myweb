@@ -1,0 +1,105 @@
+.canvas {
+  box-sizing: border-box;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  background: #f4f4f4; }
+
+.go404 {
+  width: 600px;
+  height: 720px;
+  background: #ffffff;
+  box-shadow: 29px 9px 93px 2px rgba(0, 0, 0, 0.41); }
+  @media (min-width: 800px) {
+    .go404 {
+      width: 300px;
+      height: 360px; }
+      .go404 .pixel {
+        width: 7.5px;
+        height: 7.5px; } }
+  @media (min-width: 1276px) {
+    .go404 {
+      width: 450px;
+      height: 540px; }
+      .go404 .pixel {
+        width: 11.25px;
+        height: 11.25px; } }
+  @media (min-width: 1600px) {
+    .go404 {
+      width: 600px;
+      height: 720px; }
+      .go404 .pixel {
+        width: 15px;
+        height: 15px; } }
+  @media (max-width: 760px) {
+    .go404 {
+      width: 200px;
+      height: 240px; }
+      .go404 .pixel {
+        width: 5px;
+        height: 5px; } }
+  .go404 .pixel {
+    background: #ffd924;
+    float: left;
+    font-size: 6px;
+    text-align: center;
+    line-height: 10px;
+    box-shadow: 0px 0px 1px 0px; }
+    .go404 .pixel:nth-of-type(762), .go404 .pixel:nth-of-type(802), .go404 .pixel:nth-of-type(842), .go404 .pixel:nth-of-type(882), .go404 .pixel:nth-of-type(922), .go404 .pixel:nth-of-type(962), .go404 .pixel:nth-of-type(1002), .go404 .pixel:nth-of-type(1003), .go404 .pixel:nth-of-type(1004), .go404 .pixel:nth-of-type(1005), .go404 .pixel:nth-of-type(1006), .go404 .pixel:nth-of-type(1007), .go404 .pixel:nth-of-type(967), .go404 .pixel:nth-of-type(927), .go404 .pixel:nth-of-type(887), .go404 .pixel:nth-of-type(847), .go404 .pixel:nth-of-type(767), .go404 .pixel:nth-of-type(807), .go404 .pixel:nth-of-type(1008), .go404 .pixel:nth-of-type(1047), .go404 .pixel:nth-of-type(1087), .go404 .pixel:nth-of-type(1127), .go404 .pixel:nth-of-type(811), .go404 .pixel:nth-of-type(851), .go404 .pixel:nth-of-type(891), .go404 .pixel:nth-of-type(931), .go404 .pixel:nth-of-type(971), .go404 .pixel:nth-of-type(1011), .go404 .pixel:nth-of-type(1051), .go404 .pixel:nth-of-type(1091), .go404 .pixel:nth-of-type(1132), .go404 .pixel:nth-of-type(1133), .go404 .pixel:nth-of-type(1134), .go404 .pixel:nth-of-type(1135), .go404 .pixel:nth-of-type(1096), .go404 .pixel:nth-of-type(1056), .go404 .pixel:nth-of-type(1016), .go404 .pixel:nth-of-type(976), .go404 .pixel:nth-of-type(936), .go404 .pixel:nth-of-type(896), .go404 .pixel:nth-of-type(856), .go404 .pixel:nth-of-type(816), .go404 .pixel:nth-of-type(775), .go404 .pixel:nth-of-type(774), .go404 .pixel:nth-of-type(773), .go404 .pixel:nth-of-type(772), .go404 .pixel:nth-of-type(1019), .go404 .pixel:nth-of-type(979), .go404 .pixel:nth-of-type(939), .go404 .pixel:nth-of-type(899), .go404 .pixel:nth-of-type(859), .go404 .pixel:nth-of-type(819), .go404 .pixel:nth-of-type(779), .go404 .pixel:nth-of-type(1020), .go404 .pixel:nth-of-type(1021), .go404 .pixel:nth-of-type(1022), .go404 .pixel:nth-of-type(1023), .go404 .pixel:nth-of-type(1024), .go404 .pixel:nth-of-type(1025), .go404 .pixel:nth-of-type(984), .go404 .pixel:nth-of-type(944), .go404 .pixel:nth-of-type(904), .go404 .pixel:nth-of-type(864), .go404 .pixel:nth-of-type(824), .go404 .pixel:nth-of-type(784), .go404 .pixel:nth-of-type(1064), .go404 .pixel:nth-of-type(1104), .go404 .pixel:nth-of-type(812), .go404 .pixel:nth-of-type(852), .go404 .pixel:nth-of-type(893), .go404 .pixel:nth-of-type(933), .go404 .pixel:nth-of-type(974), .go404 .pixel:nth-of-type(1014), .go404 .pixel:nth-of-type(1055), .go404 .pixel:nth-of-type(1095), .go404 .pixel:nth-of-type(1144) {
+      background: #231816; }
+
+.gopikaqiu {
+  width: 600px;
+  height: 720px;
+  background: #ffffff;
+  width: 600px;
+  height: 720px;
+  background: #ffffff;
+  box-shadow: 1px 14px 93px 2px rgba(0, 0, 0, 0.41); }
+  @media (min-width: 800px) {
+    .gopikaqiu {
+      width: 300px;
+      height: 360px; }
+      .gopikaqiu .pixel {
+        width: 7.5px;
+        height: 7.5px; } }
+  @media (min-width: 1276px) {
+    .gopikaqiu {
+      width: 450px;
+      height: 540px; }
+      .gopikaqiu .pixel {
+        width: 11.25px;
+        height: 11.25px; } }
+  @media (min-width: 1600px) {
+    .gopikaqiu {
+      width: 600px;
+      height: 720px; }
+      .gopikaqiu .pixel {
+        width: 15px;
+        height: 15px; } }
+  @media (max-width: 760px) {
+    .gopikaqiu {
+      width: 200px;
+      height: 240px; }
+      .gopikaqiu .pixel {
+        width: 5px;
+        height: 5px; } }
+  .gopikaqiu .pixel {
+    background: #ffd924;
+    float: left;
+    font-size: 6px;
+    text-align: center;
+    line-height: 10px;
+    box-shadow: 0px 0px 1px 0px; }
+    .gopikaqiu .pixel:nth-of-type(155), .gopikaqiu .pixel:nth-of-type(156), .gopikaqiu .pixel:nth-of-type(193), .gopikaqiu .pixel:nth-of-type(194), .gopikaqiu .pixel:nth-of-type(195), .gopikaqiu .pixel:nth-of-type(196), .gopikaqiu .pixel:nth-of-type(231), .gopikaqiu .pixel:nth-of-type(232), .gopikaqiu .pixel:nth-of-type(233), .gopikaqiu .pixel:nth-of-type(234), .gopikaqiu .pixel:nth-of-type(235), .gopikaqiu .pixel:nth-of-type(236), .gopikaqiu .pixel:nth-of-type(274), .gopikaqiu .pixel:nth-of-type(275), .gopikaqiu .pixel:nth-of-type(276), .gopikaqiu .pixel:nth-of-type(314), .gopikaqiu .pixel:nth-of-type(315), .gopikaqiu .pixel:nth-of-type(354), .gopikaqiu .pixel:nth-of-type(355), .gopikaqiu .pixel:nth-of-type(394), .gopikaqiu .pixel:nth-of-type(433), .gopikaqiu .pixel:nth-of-type(472), .gopikaqiu .pixel:nth-of-type(511), .gopikaqiu .pixel:nth-of-type(550), .gopikaqiu .pixel:nth-of-type(590), .gopikaqiu .pixel:nth-of-type(630), .gopikaqiu .pixel:nth-of-type(270), .gopikaqiu .pixel:nth-of-type(309), .gopikaqiu .pixel:nth-of-type(348), .gopikaqiu .pixel:nth-of-type(387), .gopikaqiu .pixel:nth-of-type(386), .gopikaqiu .pixel:nth-of-type(425), .gopikaqiu .pixel:nth-of-type(384), .gopikaqiu .pixel:nth-of-type(383), .gopikaqiu .pixel:nth-of-type(382), .gopikaqiu .pixel:nth-of-type(381), .gopikaqiu .pixel:nth-of-type(380), .gopikaqiu .pixel:nth-of-type(379), .gopikaqiu .pixel:nth-of-type(378), .gopikaqiu .pixel:nth-of-type(376), .gopikaqiu .pixel:nth-of-type(375), .gopikaqiu .pixel:nth-of-type(374), .gopikaqiu .pixel:nth-of-type(373), .gopikaqiu .pixel:nth-of-type(417), .gopikaqiu .pixel:nth-of-type(332), .gopikaqiu .pixel:nth-of-type(331), .gopikaqiu .pixel:nth-of-type(330), .gopikaqiu .pixel:nth-of-type(329), .gopikaqiu .pixel:nth-of-type(288), .gopikaqiu .pixel:nth-of-type(287), .gopikaqiu .pixel:nth-of-type(286), .gopikaqiu .pixel:nth-of-type(285), .gopikaqiu .pixel:nth-of-type(284), .gopikaqiu .pixel:nth-of-type(283), .gopikaqiu .pixel:nth-of-type(325), .gopikaqiu .pixel:nth-of-type(324), .gopikaqiu .pixel:nth-of-type(323), .gopikaqiu .pixel:nth-of-type(366), .gopikaqiu .pixel:nth-of-type(365), .gopikaqiu .pixel:nth-of-type(406), .gopikaqiu .pixel:nth-of-type(407), .gopikaqiu .pixel:nth-of-type(447), .gopikaqiu .pixel:nth-of-type(448), .gopikaqiu .pixel:nth-of-type(488), .gopikaqiu .pixel:nth-of-type(489), .gopikaqiu .pixel:nth-of-type(530), .gopikaqiu .pixel:nth-of-type(531), .gopikaqiu .pixel:nth-of-type(533), .gopikaqiu .pixel:nth-of-type(572), .gopikaqiu .pixel:nth-of-type(612), .gopikaqiu .pixel:nth-of-type(651), .gopikaqiu .pixel:nth-of-type(691), .gopikaqiu .pixel:nth-of-type(731), .gopikaqiu .pixel:nth-of-type(671), .gopikaqiu .pixel:nth-of-type(711), .gopikaqiu .pixel:nth-of-type(751), .gopikaqiu .pixel:nth-of-type(792), .gopikaqiu .pixel:nth-of-type(832), .gopikaqiu .pixel:nth-of-type(872), .gopikaqiu .pixel:nth-of-type(912), .gopikaqiu .pixel:nth-of-type(951), .gopikaqiu .pixel:nth-of-type(991), .gopikaqiu .pixel:nth-of-type(770), .gopikaqiu .pixel:nth-of-type(810), .gopikaqiu .pixel:nth-of-type(850), .gopikaqiu .pixel:nth-of-type(890), .gopikaqiu .pixel:nth-of-type(931), .gopikaqiu .pixel:nth-of-type(971), .gopikaqiu .pixel:nth-of-type(509), .gopikaqiu .pixel:nth-of-type(616), .gopikaqiu .pixel:nth-of-type(617), .gopikaqiu .pixel:nth-of-type(655), .gopikaqiu .pixel:nth-of-type(656), .gopikaqiu .pixel:nth-of-type(657), .gopikaqiu .pixel:nth-of-type(658), .gopikaqiu .pixel:nth-of-type(697), .gopikaqiu .pixel:nth-of-type(698), .gopikaqiu .pixel:nth-of-type(696), .gopikaqiu .pixel:nth-of-type(695), .gopikaqiu .pixel:nth-of-type(736), .gopikaqiu .pixel:nth-of-type(737), .gopikaqiu .pixel:nth-of-type(627), .gopikaqiu .pixel:nth-of-type(626), .gopikaqiu .pixel:nth-of-type(665), .gopikaqiu .pixel:nth-of-type(666), .gopikaqiu .pixel:nth-of-type(667), .gopikaqiu .pixel:nth-of-type(668), .gopikaqiu .pixel:nth-of-type(705), .gopikaqiu .pixel:nth-of-type(706), .gopikaqiu .pixel:nth-of-type(707), .gopikaqiu .pixel:nth-of-type(708), .gopikaqiu .pixel:nth-of-type(746), .gopikaqiu .pixel:nth-of-type(747), .gopikaqiu .pixel:nth-of-type(781), .gopikaqiu .pixel:nth-of-type(782), .gopikaqiu .pixel:nth-of-type(861), .gopikaqiu .pixel:nth-of-type(862), .gopikaqiu .pixel:nth-of-type(899), .gopikaqiu .pixel:nth-of-type(900), .gopikaqiu .pixel:nth-of-type(903), .gopikaqiu .pixel:nth-of-type(904), .gopikaqiu .pixel:nth-of-type(858), .gopikaqiu .pixel:nth-of-type(865), .gopikaqiu .pixel:nth-of-type(1012), .gopikaqiu .pixel:nth-of-type(1030), .gopikaqiu .pixel:nth-of-type(1071), .gopikaqiu .pixel:nth-of-type(1111), .gopikaqiu .pixel:nth-of-type(1151), .gopikaqiu .pixel:nth-of-type(1191), .gopikaqiu .pixel:nth-of-type(1232), .gopikaqiu .pixel:nth-of-type(1272), .gopikaqiu .pixel:nth-of-type(1312), .gopikaqiu .pixel:nth-of-type(1352), .gopikaqiu .pixel:nth-of-type(1392), .gopikaqiu .pixel:nth-of-type(1432), .gopikaqiu .pixel:nth-of-type(1472), .gopikaqiu .pixel:nth-of-type(1511), .gopikaqiu .pixel:nth-of-type(1551), .gopikaqiu .pixel:nth-of-type(1590), .gopikaqiu .pixel:nth-of-type(1629), .gopikaqiu .pixel:nth-of-type(1670), .gopikaqiu .pixel:nth-of-type(1710), .gopikaqiu .pixel:nth-of-type(1709), .gopikaqiu .pixel:nth-of-type(1708), .gopikaqiu .pixel:nth-of-type(1707), .gopikaqiu .pixel:nth-of-type(1706), .gopikaqiu .pixel:nth-of-type(1665), .gopikaqiu .pixel:nth-of-type(1666), .gopikaqiu .pixel:nth-of-type(1624), .gopikaqiu .pixel:nth-of-type(1623), .gopikaqiu .pixel:nth-of-type(1622), .gopikaqiu .pixel:nth-of-type(1621), .gopikaqiu .pixel:nth-of-type(1620), .gopikaqiu .pixel:nth-of-type(1619), .gopikaqiu .pixel:nth-of-type(1618), .gopikaqiu .pixel:nth-of-type(1657), .gopikaqiu .pixel:nth-of-type(1656), .gopikaqiu .pixel:nth-of-type(1658), .gopikaqiu .pixel:nth-of-type(1696), .gopikaqiu .pixel:nth-of-type(1695), .gopikaqiu .pixel:nth-of-type(1694), .gopikaqiu .pixel:nth-of-type(1693), .gopikaqiu .pixel:nth-of-type(1692), .gopikaqiu .pixel:nth-of-type(1652), .gopikaqiu .pixel:nth-of-type(1613), .gopikaqiu .pixel:nth-of-type(1572), .gopikaqiu .pixel:nth-of-type(1531), .gopikaqiu .pixel:nth-of-type(1491), .gopikaqiu .pixel:nth-of-type(1450), .gopikaqiu .pixel:nth-of-type(1410), .gopikaqiu .pixel:nth-of-type(1370), .gopikaqiu .pixel:nth-of-type(1330), .gopikaqiu .pixel:nth-of-type(1290), .gopikaqiu .pixel:nth-of-type(1250), .gopikaqiu .pixel:nth-of-type(1210), .gopikaqiu .pixel:nth-of-type(1170), .gopikaqiu .pixel:nth-of-type(1051), .gopikaqiu .pixel:nth-of-type(1091), .gopikaqiu .pixel:nth-of-type(1131), .gopikaqiu .pixel:nth-of-type(1092), .gopikaqiu .pixel:nth-of-type(1174), .gopikaqiu .pixel:nth-of-type(1178), .gopikaqiu .pixel:nth-of-type(1214), .gopikaqiu .pixel:nth-of-type(1255), .gopikaqiu .pixel:nth-of-type(1295), .gopikaqiu .pixel:nth-of-type(1336), .gopikaqiu .pixel:nth-of-type(1377), .gopikaqiu .pixel:nth-of-type(1378), .gopikaqiu .pixel:nth-of-type(1339), .gopikaqiu .pixel:nth-of-type(1299), .gopikaqiu .pixel:nth-of-type(1259), .gopikaqiu .pixel:nth-of-type(1219), .gopikaqiu .pixel:nth-of-type(1138), .gopikaqiu .pixel:nth-of-type(1189), .gopikaqiu .pixel:nth-of-type(1229), .gopikaqiu .pixel:nth-of-type(1268), .gopikaqiu .pixel:nth-of-type(1308), .gopikaqiu .pixel:nth-of-type(1347), .gopikaqiu .pixel:nth-of-type(1385), .gopikaqiu .pixel:nth-of-type(1386), .gopikaqiu .pixel:nth-of-type(1344), .gopikaqiu .pixel:nth-of-type(1304), .gopikaqiu .pixel:nth-of-type(1264), .gopikaqiu .pixel:nth-of-type(1224), .gopikaqiu .pixel:nth-of-type(1185), .gopikaqiu .pixel:nth-of-type(1145), .gopikaqiu .pixel:nth-of-type(1571), .gopikaqiu .pixel:nth-of-type(1570), .gopikaqiu .pixel:nth-of-type(1529), .gopikaqiu .pixel:nth-of-type(1528), .gopikaqiu .pixel:nth-of-type(1487), .gopikaqiu .pixel:nth-of-type(1446), .gopikaqiu .pixel:nth-of-type(1407), .gopikaqiu .pixel:nth-of-type(1366), .gopikaqiu .pixel:nth-of-type(1325), .gopikaqiu .pixel:nth-of-type(1284), .gopikaqiu .pixel:nth-of-type(1244), .gopikaqiu .pixel:nth-of-type(1205), .gopikaqiu .pixel:nth-of-type(1164), .gopikaqiu .pixel:nth-of-type(1123), .gopikaqiu .pixel:nth-of-type(1083), .gopikaqiu .pixel:nth-of-type(1043), .gopikaqiu .pixel:nth-of-type(1003), .gopikaqiu .pixel:nth-of-type(963), .gopikaqiu .pixel:nth-of-type(923), .gopikaqiu .pixel:nth-of-type(883), .gopikaqiu .pixel:nth-of-type(843), .gopikaqiu .pixel:nth-of-type(803), .gopikaqiu .pixel:nth-of-type(763), .gopikaqiu .pixel:nth-of-type(804), .gopikaqiu .pixel:nth-of-type(845), .gopikaqiu .pixel:nth-of-type(886), .gopikaqiu .pixel:nth-of-type(927), .gopikaqiu .pixel:nth-of-type(968), .gopikaqiu .pixel:nth-of-type(1009), .gopikaqiu .pixel:nth-of-type(1050), .gopikaqiu .pixel:nth-of-type(1247), .gopikaqiu .pixel:nth-of-type(1208), .gopikaqiu .pixel:nth-of-type(1288), .gopikaqiu .pixel:nth-of-type(1329), .gopikaqiu .pixel:nth-of-type(1409), .gopikaqiu .pixel:nth-of-type(1169) {
+      background: #231816; }
+    .gopikaqiu .pixel:nth-of-type(657), .gopikaqiu .pixel:nth-of-type(667) {
+      background: #ffffff; }
+    .gopikaqiu .pixel:nth-of-type(773), .gopikaqiu .pixel:nth-of-type(774), .gopikaqiu .pixel:nth-of-type(812), .gopikaqiu .pixel:nth-of-type(854), .gopikaqiu .pixel:nth-of-type(855), .gopikaqiu .pixel:nth-of-type(814), .gopikaqiu .pixel:nth-of-type(815), .gopikaqiu .pixel:nth-of-type(852), .gopikaqiu .pixel:nth-of-type(853), .gopikaqiu .pixel:nth-of-type(893), .gopikaqiu .pixel:nth-of-type(813), .gopikaqiu .pixel:nth-of-type(894), .gopikaqiu .pixel:nth-of-type(789), .gopikaqiu .pixel:nth-of-type(790), .gopikaqiu .pixel:nth-of-type(828), .gopikaqiu .pixel:nth-of-type(829), .gopikaqiu .pixel:nth-of-type(830), .gopikaqiu .pixel:nth-of-type(831), .gopikaqiu .pixel:nth-of-type(868), .gopikaqiu .pixel:nth-of-type(869), .gopikaqiu .pixel:nth-of-type(870), .gopikaqiu .pixel:nth-of-type(871), .gopikaqiu .pixel:nth-of-type(909), .gopikaqiu .pixel:nth-of-type(910) {
+      background: #fe3310; }
+    .gopikaqiu .pixel:nth-of-type(1101), .gopikaqiu .pixel:nth-of-type(1102), .gopikaqiu .pixel:nth-of-type(1060), .gopikaqiu .pixel:nth-of-type(1061), .gopikaqiu .pixel:nth-of-type(1062), .gopikaqiu .pixel:nth-of-type(1063), .gopikaqiu .pixel:nth-of-type(549), .gopikaqiu .pixel:nth-of-type(508), .gopikaqiu .pixel:nth-of-type(510), .gopikaqiu .pixel:nth-of-type(471), .gopikaqiu .pixel:nth-of-type(432), .gopikaqiu .pixel:nth-of-type(393), .gopikaqiu .pixel:nth-of-type(353), .gopikaqiu .pixel:nth-of-type(352), .gopikaqiu .pixel:nth-of-type(392), .gopikaqiu .pixel:nth-of-type(431), .gopikaqiu .pixel:nth-of-type(470), .gopikaqiu .pixel:nth-of-type(469), .gopikaqiu .pixel:nth-of-type(426), .gopikaqiu .pixel:nth-of-type(416), .gopikaqiu .pixel:nth-of-type(372), .gopikaqiu .pixel:nth-of-type(328), .gopikaqiu .pixel:nth-of-type(327), .gopikaqiu .pixel:nth-of-type(326), .gopikaqiu .pixel:nth-of-type(367), .gopikaqiu .pixel:nth-of-type(408), .gopikaqiu .pixel:nth-of-type(449), .gopikaqiu .pixel:nth-of-type(490), .gopikaqiu .pixel:nth-of-type(491), .gopikaqiu .pixel:nth-of-type(492), .gopikaqiu .pixel:nth-of-type(493), .gopikaqiu .pixel:nth-of-type(494), .gopikaqiu .pixel:nth-of-type(532), .gopikaqiu .pixel:nth-of-type(652), .gopikaqiu .pixel:nth-of-type(1052), .gopikaqiu .pixel:nth-of-type(972), .gopikaqiu .pixel:nth-of-type(844), .gopikaqiu .pixel:nth-of-type(885), .gopikaqiu .pixel:nth-of-type(926), .gopikaqiu .pixel:nth-of-type(967), .gopikaqiu .pixel:nth-of-type(1049), .gopikaqiu .pixel:nth-of-type(1008), .gopikaqiu .pixel:nth-of-type(1090), .gopikaqiu .pixel:nth-of-type(990), .gopikaqiu .pixel:nth-of-type(1070), .gopikaqiu .pixel:nth-of-type(1269), .gopikaqiu .pixel:nth-of-type(1309), .gopikaqiu .pixel:nth-of-type(1348), .gopikaqiu .pixel:nth-of-type(1387), .gopikaqiu .pixel:nth-of-type(1376), .gopikaqiu .pixel:nth-of-type(1335), .gopikaqiu .pixel:nth-of-type(1294), .gopikaqiu .pixel:nth-of-type(1254), .gopikaqiu .pixel:nth-of-type(1616), .gopikaqiu .pixel:nth-of-type(1617), .gopikaqiu .pixel:nth-of-type(1625), .gopikaqiu .pixel:nth-of-type(1626), .gopikaqiu .pixel:nth-of-type(1580), .gopikaqiu .pixel:nth-of-type(1581), .gopikaqiu .pixel:nth-of-type(1582), .gopikaqiu .pixel:nth-of-type(1583), .gopikaqiu .pixel:nth-of-type(1451), .gopikaqiu .pixel:nth-of-type(1492), .gopikaqiu .pixel:nth-of-type(1532), .gopikaqiu .pixel:nth-of-type(1573), .gopikaqiu .pixel:nth-of-type(1530), .gopikaqiu .pixel:nth-of-type(1490), .gopikaqiu .pixel:nth-of-type(1489), .gopikaqiu .pixel:nth-of-type(1488), .gopikaqiu .pixel:nth-of-type(1449), .gopikaqiu .pixel:nth-of-type(1448), .gopikaqiu .pixel:nth-of-type(1447), .gopikaqiu .pixel:nth-of-type(1369), .gopikaqiu .pixel:nth-of-type(1408), .gopikaqiu .pixel:nth-of-type(1367), .gopikaqiu .pixel:nth-of-type(1368), .gopikaqiu .pixel:nth-of-type(1327), .gopikaqiu .pixel:nth-of-type(1328), .gopikaqiu .pixel:nth-of-type(1287) {
+      background: #f19224; }
+    .gopikaqiu .pixel:nth-of-type(1209), .gopikaqiu .pixel:nth-of-type(1249), .gopikaqiu .pixel:nth-of-type(1248), .gopikaqiu .pixel:nth-of-type(1289) {
+      background: #c3a40f; }
